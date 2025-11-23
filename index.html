@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>천하태평 슈퍼</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#D45D3C', // 빛바랜 다홍색
+              secondary: '#2C3E50', // 짙은 남색
+              background: '#F4F1EA', // 미색/크림색
+              accent: '#E8A87C', // 따뜻한 살구색
+            },
+            fontFamily: {
+              serif: ['"Noto Serif KR"', 'serif'],
+              sans: ['"Noto Sans KR"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F4F1EA; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D45D3C; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2C3E50; 
+      }
+      .font-outline {
+        text-shadow: -1px -1px 0 #F4F1EA, 1px -1px 0 #F4F1EA, -1px 1px 0 #F4F1EA, 1px 1px 0 #F4F1EA;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-secondary font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
